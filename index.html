@@ -1,1 +1,21 @@
 Hello on Domen's site
+
+<body id="body">
+<button onclick="clickMeIfYouDare()">Click me if you dare</button>
+</body>
+
+<script>
+    function clickMeIfYouDare() {
+        const body = document.getElementById('body');
+
+        setInterval(() => {
+            if (body.style.backgroundColor === 'red') {
+                body.style.backgroundColor = 'blue';
+            } else {
+                body.style.backgroundColor = 'red';
+            }
+        }, 10)
+    }
+</script>
+
+
